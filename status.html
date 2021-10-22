@@ -54,15 +54,12 @@
 	<section id="status">
     <div class="server-status">
       <h1>The server is currently Online</h1>
-	  <?php
-
-    $jsonIn = file_get_contents('https://discord.com/api/guilds/785539951201615923/widget.json');
-    $JSON = json_decode($jsonIn, true);
-
-    $membersCount = count($JSON['members']);
-
-    echo "Number of members: " . $membersCount;
-   ?>
+	    <div class="col-md-4">
+					<a class="discord-widget" href="https://discord.gg/qYEdN3fgXv" title="Join us on Discord">
+						<img src="https://discordapp.com/api/guilds/785539951201615923/embed.png?style=banner3">
+					</a>
+			</div>
+	 
 	<iframe src="https://discord.com/widget?id=785539951201615923&theme=dark" width="600" height="800" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 		
     </div>
