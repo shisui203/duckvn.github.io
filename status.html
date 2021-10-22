@@ -56,18 +56,18 @@
       <h1>The server is currently Online</h1>
 	  <?php
 
-    $jsonIn = file_get_contents('https://discordapp.com/api/guilds/356230556738125824/widget.json');
+    $jsonIn = file_get_contents('https://discord.com/api/guilds/785539951201615923/widget.json');
     $JSON = json_decode($jsonIn, true);
 
     $membersCount = count($JSON['members']);
 
     echo "Number of members: " . $membersCount;
    ?>
-	<iframe src="https://e.widgetbot.io/channels/700911657282437203/700911657282437206" height="600" width="800"></iframe>
+	<iframe src="https://e.widgetbot.io/channels/700911657282437203" height="600" width="800"></iframe>
 		<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
 				new Crate({
-				server: '700911657282437203', // ftw
+				server: '785539951201615923', // ftw
 				channel: '700911657282437206' // #chung
 				})
 				button.notify('Hello __world__\n```js\n// This is Sync!\n```')
