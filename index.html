@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>DUCK TEAM VIETNAM | GAMING CLAN</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta charset="utf-8">
+
+	<!-- Custom CSS for this template -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="js/bootstrap/bootstrap.min.js">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button> 
+
+	<div class="topnav" id="myTopnav">
+		<div class="max-width">
+			  <a class="active" href="index.html">Trang chủ</a>
+			  <a href="about.html">Về chúng tôi</a>
+			  <a href="events.html">Sự kiện</a>
+			  <a href="info.html">Thông tin</a>
+			  <!-- <a href="vote.html">Vote</a> -->
+			  <a href="staff.html">Đội ngũ</a>
+			  <a href="status.html">Trạng thái</a>
+			  <a href="leaderboard.html">Bảng xếp hạng</a>  <!-- Có forum thì dùng còn ko thì thôi -->
+			  <a href="contact.html">Liên hệ</a>
+		  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+	</div>
+
+	<!-- Header (Banner) -->
+	<header id="head" class="parallax">
+		<h1>WELCOME TO DUCK TEAM VIETNAM</h1>
+		<h3>AN VIETNAMESE'S GAMING CLAN</h3>
+	</header>
+	<!-- End Header -->
+
+	<section id="home">
+		<div class="row homepage">
+			<div class="col-md-8">
+				<p class="big-col-home">Những thông tin quan trọng mà bạn cần chú ý</p>
+				<div class="big-col-home-text">
+					<h5>Luật của Clan</h5>
+					<p>Đương nhiên, luật sinh ra là để giữ trật tự và tạo nên môi trường thân thiện giữa mọi người trong Clan. Bạn có thể xem luật <a href="example-link.html">tại đây</a></p><br>
+					<h5>Sự kiện</h5>
+					<p>Kiểm tra tất cả sự kiện của Clan <a href="example-link.html">tại đây</a></p>
+					<h5>Liên hệ</h5>
+					<p>Nếu bạn có vấn đề gì thì hãy liên hệ với chúng tôi qua Email <a href="example-link.html">duckteamtocchien9@gmail.com</a></p><br>
+					
+				</div>
+			</div>
+			<div class="col-md-4">
+				<p class="follow-twitter">Theo dõi chúng tôi trên <a class="fb-link" target="_blank" href="example-link.html">Facebook</a></p>
+				<div id="fb-root"></div>
+				<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0&appId=261008294619580&autoLogAppEvents=1" nonce="Adjojktv"></script>
+				<div class="fb-page" data-href="https://www.facebook.com/duckteamvietnam/" data-tabs="timeline" data-width="300" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/duckteamvietnam/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/duckteamvietnam/">Duck Team</a></blockquote></div>
+			</div>
+		</div>
+	</section>
+
+	<a style="display:block;" href="https://discord.gg/6ez7cqvA">
+	  <div class="discord-banner"><img class="discord-img" width="333" src="img/Discord-Logo+Wordmark-White.svg"></div>
+	</a>
+
+	<footer>
+		<div class="footer">
+			<div class="copyright-notice">
+				<!-- !! Replace this with your own domain !! -->
+				<p>duckvn.tk &copy; | All rights reserved</p>
+				<!-- If you want to, you're allowed to delete these credits. But if you want to support my work, please leave it. -->
+				<p>Made with <span class="highlight">❤</span> by <a target="_blank" href="https://fb.com/nakiri.tenshi">Hai Dang</a>.</font></p>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+	function myFunction() {
+	    var x = document.getElementById("myTopnav");
+	    if (x.className === "topnav") {
+	        x.className += " responsive";
+	    } else {
+	        x.className = "topnav";
+	    }
+	}
+	</script>
+
+	<script>
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	        document.getElementById("myBtn").style.display = "block";
+	    } else {
+	        document.getElementById("myBtn").style.display = "none";
+	    }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	    document.body.scrollTop = 0;
+	    document.documentElement.scrollTop = 0;
+	}
+	</script>
+
+</body>
+</html>
